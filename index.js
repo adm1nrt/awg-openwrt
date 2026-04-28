@@ -3,7 +3,7 @@ const cheerio = require('cheerio');
 const core = require('@actions/core');
 
 const version = process.argv[2]; // Получение версии OpenWRT из аргумента командной строки
-const filterTargetsStr = process.argv[3] || '24.10.6'; // Фильтр по targets (опционально, через запятую)
+const filterTargetsStr = process.argv[3] || ''; // Фильтр по targets (опционально, через запятую)
 const filterSubtargetsStr = process.argv[4] || ''; // Фильтр по subtargets (опционально, через запятую)
 
 // Преобразуем строки с запятыми в массивы
